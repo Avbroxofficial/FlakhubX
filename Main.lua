@@ -1,4 +1,9 @@
 print("Flak Hub X loading, please wait...")
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
@@ -18,28 +23,37 @@ local UICorner_3 = Instance.new("UICorner")
 local MC = Instance.new("Frame")
 local Frame_4 = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 local Frame_5 = Instance.new("Frame")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Frame_6 = Instance.new("Frame")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local Tag = Instance.new("TextLabel")
 local Settings = Instance.new("ImageButton")
-local Frame_6 = Instance.new("Frame")
+local Frame_7 = Instance.new("Frame")
 local ImageButton = Instance.new("ImageButton")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local Credits = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local ImageLabel_3 = Instance.new("ImageLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local ImageButton_2 = Instance.new("ImageButton")
-local UICorner_6 = Instance.new("UICorner")
-local NNB = Instance.new("Frame")
-local Frame_7 = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
-local ImageButton_3 = Instance.new("ImageButton")
 local UICorner_8 = Instance.new("UICorner")
-local Unlocked = Instance.new("Frame")
+local NNB = Instance.new("Frame")
+local Frame_8 = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextButton_7 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local ImageButton_3 = Instance.new("ImageButton")
+local UICorner_12 = Instance.new("UICorner")
+local Unlocked = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
 local Holer = Instance.new("TextButton")
 
 --Properties:
@@ -186,19 +200,50 @@ Frame_4.ZIndex = 4
 UICorner_4.CornerRadius = UDim.new(1, 0)
 UICorner_4.Parent = Frame_4
 
-Frame_5.Parent = Frame
-Frame_5.BackgroundColor3 = Color3.fromRGB(35, 39, 42)
-Frame_5.Position = UDim2.new(0, 0, 0.866666675, 0)
-Frame_5.Size = UDim2.new(0, 213, 0, 40)
+TextButton_4.Parent = MC
+TextButton_4.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+TextButton_4.Position = UDim2.new(0.0151515156, 0, 0.0216606501, 0)
+TextButton_4.Size = UDim2.new(0, 165, 0, 23)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Teleports"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
 
-ImageLabel_2.Parent = Frame_5
+UICorner_5.Parent = TextButton_4
+
+Frame_5.Parent = TextButton_4
+Frame_5.BackgroundColor3 = Color3.fromRGB(66, 69, 73)
+Frame_5.Position = UDim2.new(0.909090936, 0, 0, 0)
+Frame_5.Size = UDim2.new(0, 155, 0, 175)
+Frame_5.Visible = false
+Frame_5.ZIndex = 12
+
+TextButton_5.Parent = Frame_5
+TextButton_5.BackgroundColor3 = Color3.fromRGB(54, 57, 62)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Size = UDim2.new(0, 155, 0, 14)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Night club"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+UICorner_6.Parent = TextButton_5
+
+Frame_6.Parent = Frame
+Frame_6.BackgroundColor3 = Color3.fromRGB(35, 39, 42)
+Frame_6.Position = UDim2.new(0, 0, 0.866666675, 0)
+Frame_6.Size = UDim2.new(0, 213, 0, 40)
+
+ImageLabel_2.Parent = Frame_6
 ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_2.BackgroundTransparency = 1.000
 ImageLabel_2.Position = UDim2.new(0.0318471342, 0, 0, 0)
 ImageLabel_2.Size = UDim2.new(0, 40, 0, 40)
 ImageLabel_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-TextLabel_2.Parent = Frame_5
+TextLabel_2.Parent = Frame_6
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(0.283245116, 0, 0.224999994, 0)
@@ -211,7 +256,7 @@ TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
 Tag.Name = "Tag"
-Tag.Parent = Frame_5
+Tag.Parent = Frame_6
 Tag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Tag.BackgroundTransparency = 1.000
 Tag.Position = UDim2.new(0.283245116, 0, 0.75, 0)
@@ -224,19 +269,19 @@ Tag.TextSize = 14.000
 Tag.TextWrapped = true
 
 Settings.Name = "Settings"
-Settings.Parent = Frame_5
+Settings.Parent = Frame_6
 Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Settings.BackgroundTransparency = 1.000
 Settings.Position = UDim2.new(0.81099999, 0, 0, 0)
 Settings.Size = UDim2.new(0, 40, 0, 40)
 Settings.Image = "rbxassetid://6503759908"
 
-Frame_6.Parent = Frame_5
-Frame_6.BackgroundColor3 = Color3.fromRGB(40, 43, 48)
-Frame_6.BorderSizePixel = 0
-Frame_6.Position = UDim2.new(0, 0, -6.3499999, 0)
-Frame_6.Size = UDim2.new(0, 69, 0, 254)
-Frame_6.ZIndex = -9
+Frame_7.Parent = Frame_6
+Frame_7.BackgroundColor3 = Color3.fromRGB(40, 43, 48)
+Frame_7.BorderSizePixel = 0
+Frame_7.Position = UDim2.new(0, 0, -6.3499999, 0)
+Frame_7.Size = UDim2.new(0, 69, 0, 254)
+Frame_7.ZIndex = -9
 
 ImageButton.Parent = Frame
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -244,8 +289,8 @@ ImageButton.Position = UDim2.new(0.0130000003, 0, 0.263000011, 0)
 ImageButton.Size = UDim2.new(0, 50, 0, 50)
 ImageButton.Image = "rbxassetid://3073069860"
 
-UICorner_5.CornerRadius = UDim.new(10, 0)
-UICorner_5.Parent = ImageButton
+UICorner_7.CornerRadius = UDim.new(10, 0)
+UICorner_7.Parent = ImageButton
 
 Credits.Name = "Credits"
 Credits.Parent = Frame
@@ -298,10 +343,10 @@ ImageButton_2.Parent = Frame
 ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton_2.Position = UDim2.new(0.0130000003, 0, 0.47966668, 0)
 ImageButton_2.Size = UDim2.new(0, 50, 0, 50)
-ImageButton_2.Image = "rbxassetid://10343147749"
+ImageButton_2.Image = "rbxassetid://10346152065"
 
-UICorner_6.CornerRadius = UDim.new(10, 0)
-UICorner_6.Parent = ImageButton_2
+UICorner_8.CornerRadius = UDim.new(10, 0)
+UICorner_8.Parent = ImageButton_2
 
 NNB.Name = "NNB"
 NNB.Parent = Frame
@@ -312,13 +357,39 @@ NNB.Size = UDim2.new(0, 462, 0, 277)
 NNB.Visible = false
 NNB.ZIndex = 2
 
-Frame_7.Parent = NNB
-Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_7.Position = UDim2.new(-0.166666672, 0, 0.473212987, 0)
-Frame_7.Size = UDim2.new(0, 5, 0, 50)
+Frame_8.Parent = NNB
+Frame_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_8.Position = UDim2.new(-0.166666672, 0, 0.473212987, 0)
+Frame_8.Size = UDim2.new(0, 5, 0, 50)
 
-UICorner_7.CornerRadius = UDim.new(1, 0)
-UICorner_7.Parent = Frame_7
+UICorner_9.CornerRadius = UDim.new(1, 0)
+UICorner_9.Parent = Frame_8
+
+TextButton_6.Parent = NNB
+TextButton_6.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+TextButton_6.Position = UDim2.new(0.0108225113, 0, 0, 0)
+TextButton_6.Size = UDim2.new(0, 200, 0, 50)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Autolift"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
+
+UICorner_10.Parent = TextButton_6
+
+TextButton_7.Parent = NNB
+TextButton_7.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+TextButton_7.Position = UDim2.new(0.478354961, 0, 0, 0)
+TextButton_7.Size = UDim2.new(0, 200, 0, 50)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Anti AFK"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
+
+UICorner_11.Parent = TextButton_7
 
 ImageButton_3.Parent = Frame
 ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -327,8 +398,8 @@ ImageButton_3.Position = UDim2.new(0.0130000003, 0, 0.0399999991, 0)
 ImageButton_3.Size = UDim2.new(0, 50, 0, 50)
 ImageButton_3.Image = "rbxassetid://10343961140"
 
-UICorner_8.CornerRadius = UDim.new(10, 0)
-UICorner_8.Parent = ImageButton_3
+UICorner_12.CornerRadius = UDim.new(10, 0)
+UICorner_12.Parent = ImageButton_3
 
 Unlocked.Name = "Unlocked"
 Unlocked.Parent = Frame
@@ -336,8 +407,8 @@ Unlocked.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 Unlocked.Position = UDim2.new(0.952727258, 0, 0.0399999991, 0)
 Unlocked.Size = UDim2.new(0, 20, 0, 20)
 
-UICorner_9.CornerRadius = UDim.new(1, 0)
-UICorner_9.Parent = Unlocked
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = Unlocked
 
 Holer.Name = "Holer"
 Holer.Parent = ScreenGui
@@ -355,15 +426,15 @@ Holer.TextWrapped = true
 
 -- Scripts:
 
-local function SOLILJN_fake_script() -- TextButton.LocalScript 
+local function KHGQNIU_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(SOLILJN_fake_script)()
-local function OPKVO_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(KHGQNIU_fake_script)()
+local function PMUZBYX_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -371,8 +442,8 @@ local function OPKVO_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.Parent.Parent.Holer.Visible = true
 	end)
 end
-coroutine.wrap(OPKVO_fake_script)()
-local function MYVPFVK_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(PMUZBYX_fake_script)()
+local function WQRUDE_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local textBox = script.Parent
@@ -393,8 +464,26 @@ local function MYVPFVK_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MYVPFVK_fake_script)()
-local function GVPI_fake_script() -- ImageLabel_2.LocalScript 
+coroutine.wrap(WQRUDE_fake_script)()
+local function DQVG_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	print("Right now not avaiable.")
+end
+coroutine.wrap(DQVG_fake_script)()
+local function JRKO_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Frame.Visible == true then
+			script.Parent.Frame.Visible = false
+		else
+			script.Parent.Frame.Visible = true
+		end
+	end)
+end
+coroutine.wrap(JRKO_fake_script)()
+local function GCENS_fake_script() -- ImageLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_2)
 
 	local frame = script.Parent
@@ -420,8 +509,8 @@ local function GVPI_fake_script() -- ImageLabel_2.LocalScript
 	script.Parent.Parent.Tag.Text = "#"..tag
 	
 end
-coroutine.wrap(GVPI_fake_script)()
-local function GTUROLS_fake_script() -- Settings.LocalScript 
+coroutine.wrap(GCENS_fake_script)()
+local function SVUIDN_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -435,8 +524,8 @@ local function GTUROLS_fake_script() -- Settings.LocalScript
 		
 	end)
 end
-coroutine.wrap(GTUROLS_fake_script)()
-local function BTGHAW_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(SVUIDN_fake_script)()
+local function YPTZY_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -449,8 +538,8 @@ local function BTGHAW_fake_script() -- ImageButton.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(BTGHAW_fake_script)()
-local function MNWG_fake_script() -- ImageButton_2.LocalScript 
+coroutine.wrap(YPTZY_fake_script)()
+local function ITNUXOU_fake_script() -- ImageButton_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -463,8 +552,33 @@ local function MNWG_fake_script() -- ImageButton_2.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(MNWG_fake_script)()
-local function FSQPVZY_fake_script() -- ImageButton_3.LocalScript 
+coroutine.wrap(ITNUXOU_fake_script)()
+local function FBQJF_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		getgenv().AutoLift = true
+	
+		while getgenv().AutoLift do wait()
+			game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
+		end
+	end)
+end
+coroutine.wrap(FBQJF_fake_script)()
+local function HLSUXVX_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+			vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			wait(1)
+			vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+	end)
+end
+coroutine.wrap(HLSUXVX_fake_script)()
+local function CEUU_fake_script() -- ImageButton_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -473,8 +587,8 @@ local function FSQPVZY_fake_script() -- ImageButton_3.LocalScript
 		script.Parent.Parent.FH.Visible = true
 	end)
 end
-coroutine.wrap(FSQPVZY_fake_script)()
-local function TGGJU_fake_script() -- Holer.LocalScript 
+coroutine.wrap(CEUU_fake_script)()
+local function OCXVH_fake_script() -- Holer.LocalScript 
 	local script = Instance.new('LocalScript', Holer)
 
 	script.Parent.MouseButton1Click:Connect(function()	
@@ -482,8 +596,8 @@ local function TGGJU_fake_script() -- Holer.LocalScript
 		script.Parent.Visible = false
 	end)
 end
-coroutine.wrap(TGGJU_fake_script)()
-local function SVFNT_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(OCXVH_fake_script)()
+local function PGOL_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	frame = script.Parent.Frame
@@ -491,4 +605,4 @@ local function SVFNT_fake_script() -- ScreenGui.LocalScript
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(SVFNT_fake_script)()
+coroutine.wrap(PGOL_fake_script)()
