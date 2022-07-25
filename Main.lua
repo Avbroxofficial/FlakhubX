@@ -1,4 +1,4 @@
-print("Flak Hub X loading, please wait...")
+print("Flak Hub X Autoupdate loading, please wait...")
 -- Gui to Lua
 -- Version: 3.2
 
@@ -44,6 +44,7 @@ local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
 local ImageButton_2 = Instance.new("ImageButton")
 local UICorner_8 = Instance.new("UICorner")
 local NNB = Instance.new("Frame")
@@ -378,6 +379,18 @@ TextLabel_8.TextScaled = true
 TextLabel_8.TextSize = 14.000
 TextLabel_8.TextWrapped = true
 
+TextLabel_9.Parent = Credits
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Size = UDim2.new(0, 69, 0, 50)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "V3"
+TextLabel_9.TextColor3 = Color3.fromRGB(114, 137, 218)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextStrokeColor3 = Color3.fromRGB(114, 137, 218)
+TextLabel_9.TextWrapped = true
+
 ImageButton_2.Parent = Frame
 ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton_2.Position = UDim2.new(0.0130000003, 0, 0.47966668, 0)
@@ -465,15 +478,15 @@ Holer.TextWrapped = true
 
 -- Scripts:
 
-local function FQVJ_fake_script() -- TextButton.LocalScript 
+local function XFGA_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(FQVJ_fake_script)()
-local function GMHELVK_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(XFGA_fake_script)()
+local function NXGLHKG_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -481,8 +494,8 @@ local function GMHELVK_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.Parent.Parent.Holer.Visible = true
 	end)
 end
-coroutine.wrap(GMHELVK_fake_script)()
-local function NGZIDTU_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(NXGLHKG_fake_script)()
+local function XRPFPLY_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local textBox = script.Parent
@@ -491,7 +504,7 @@ local function NGZIDTU_fake_script() -- TextButton_3.LocalScript
 	
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if	script.Parent.Parent.TextBox.Text == "MzmxHbTSt0pnv3cTVb0JBgc8ddMCQW" or Player.Name == "Avbrox" or Player.Name == "SamDerRobloxBro" then
+		if	script.Parent.Parent.TextBox.Text == "MzmxHbTSt0pnv3cTVb0JBgc8ddMCQW" or Player.Name == "Avbrox" or Player.Name == "SamDerRobloxBro" or Player.Name == "Alifawwaz3" then
 			script.Parent.Parent.Parent.Unlocked.BackgroundColor3 = Color3.new(0.0156863, 1, 0)
 			script.Parent.Parent.TextBox.Text = "Successfully unlocked."
 			script.Parent.Parent.Parent.Unlocked.Active = true
@@ -504,14 +517,14 @@ local function NGZIDTU_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NGZIDTU_fake_script)()
-local function GLZRCOO_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(XRPFPLY_fake_script)()
+local function WDRBA_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	print("Right now not avaiable.")
 end
-coroutine.wrap(GLZRCOO_fake_script)()
-local function GIAZ_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(WDRBA_fake_script)()
+local function OFFVTVU_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -522,8 +535,8 @@ local function GIAZ_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GIAZ_fake_script)()
-local function ETHFXTN_fake_script() -- ImageLabel_2.LocalScript 
+coroutine.wrap(OFFVTVU_fake_script)()
+local function RQATDBB_fake_script() -- ImageLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_2)
 
 	local frame = script.Parent
@@ -549,8 +562,8 @@ local function ETHFXTN_fake_script() -- ImageLabel_2.LocalScript
 	script.Parent.Parent.Tag.Text = "#"..tag
 	
 end
-coroutine.wrap(ETHFXTN_fake_script)()
-local function ROAEZ_fake_script() -- Settings.LocalScript 
+coroutine.wrap(RQATDBB_fake_script)()
+local function KVHSHM_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -564,8 +577,8 @@ local function ROAEZ_fake_script() -- Settings.LocalScript
 		
 	end)
 end
-coroutine.wrap(ROAEZ_fake_script)()
-local function UAWEWGD_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(KVHSHM_fake_script)()
+local function JENKWL_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -578,8 +591,8 @@ local function UAWEWGD_fake_script() -- ImageButton.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(UAWEWGD_fake_script)()
-local function MQXMPF_fake_script() -- ImageButton_2.LocalScript 
+coroutine.wrap(JENKWL_fake_script)()
+local function URMEY_fake_script() -- ImageButton_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -592,8 +605,8 @@ local function MQXMPF_fake_script() -- ImageButton_2.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(MQXMPF_fake_script)()
-local function EYGXXC_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(URMEY_fake_script)()
+local function RPOHI_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -605,8 +618,8 @@ local function EYGXXC_fake_script() -- TextButton_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EYGXXC_fake_script)()
-local function LVEOM_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(RPOHI_fake_script)()
+local function SZLHCEV_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -619,8 +632,8 @@ local function LVEOM_fake_script() -- TextButton_7.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(LVEOM_fake_script)()
-local function IYTG_fake_script() -- ImageButton_3.LocalScript 
+coroutine.wrap(SZLHCEV_fake_script)()
+local function WNMZZU_fake_script() -- ImageButton_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -629,8 +642,8 @@ local function IYTG_fake_script() -- ImageButton_3.LocalScript
 		script.Parent.Parent.FH.Visible = true
 	end)
 end
-coroutine.wrap(IYTG_fake_script)()
-local function KTCGA_fake_script() -- Holer.LocalScript 
+coroutine.wrap(WNMZZU_fake_script)()
+local function NQLP_fake_script() -- Holer.LocalScript 
 	local script = Instance.new('LocalScript', Holer)
 
 	script.Parent.MouseButton1Click:Connect(function()	
@@ -638,8 +651,8 @@ local function KTCGA_fake_script() -- Holer.LocalScript
 		script.Parent.Visible = false
 	end)
 end
-coroutine.wrap(KTCGA_fake_script)()
-local function NIBLQ_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(NQLP_fake_script)()
+local function NQZJKK_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	frame = script.Parent.Frame
@@ -647,5 +660,4 @@ local function NIBLQ_fake_script() -- ScreenGui.LocalScript
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(NIBLQ_fake_script)()
-
+coroutine.wrap(NQZJKK_fake_script)()
