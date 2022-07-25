@@ -478,15 +478,15 @@ Holer.TextWrapped = true
 
 -- Scripts:
 
-local function XFGA_fake_script() -- TextButton.LocalScript 
+local function SBCEQ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(XFGA_fake_script)()
-local function NXGLHKG_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(SBCEQ_fake_script)()
+local function DBKZQRI_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -494,8 +494,8 @@ local function NXGLHKG_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.Parent.Parent.Holer.Visible = true
 	end)
 end
-coroutine.wrap(NXGLHKG_fake_script)()
-local function XRPFPLY_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(DBKZQRI_fake_script)()
+local function DLXTAD_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local textBox = script.Parent
@@ -504,7 +504,7 @@ local function XRPFPLY_fake_script() -- TextButton_3.LocalScript
 	
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if	script.Parent.Parent.TextBox.Text == "MzmxHbTSt0pnv3cTVb0JBgc8ddMCQW" or Player.Name == "Avbrox" or Player.Name == "SamDerRobloxBro" or Player.Name == "Alifawwaz3" then
+		if	script.Parent.Parent.TextBox.Text == "MzmxHbTSt0pnv3cTVb0JBgc8ddMCQW" or Player.Name == "Avbrox" or Player.Name == "SamDerRobloxBro" or Player.Name == "Alifawwaz3" Player.Name == "Magic_Eagel12" then
 			script.Parent.Parent.Parent.Unlocked.BackgroundColor3 = Color3.new(0.0156863, 1, 0)
 			script.Parent.Parent.TextBox.Text = "Successfully unlocked."
 			script.Parent.Parent.Parent.Unlocked.Active = true
@@ -517,14 +517,14 @@ local function XRPFPLY_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XRPFPLY_fake_script)()
-local function WDRBA_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(DLXTAD_fake_script)()
+local function VUGXX_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	print("Right now not avaiable.")
 end
-coroutine.wrap(WDRBA_fake_script)()
-local function OFFVTVU_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(VUGXX_fake_script)()
+local function YNSD_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -535,13 +535,12 @@ local function OFFVTVU_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OFFVTVU_fake_script)()
-local function RQATDBB_fake_script() -- ImageLabel_2.LocalScript 
+coroutine.wrap(YNSD_fake_script)()
+local function FQCGPE_fake_script() -- ImageLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_2)
 
 	local frame = script.Parent
 	local nframe = script.Parent.Parent.TextLabel
-	local tag = math.random(1111,9999)
 	
 	local player = game.Players.LocalPlayer
 	
@@ -559,11 +558,24 @@ local function RQATDBB_fake_script() -- ImageLabel_2.LocalScript
 	
 	frame.Image = content
 	nframe.Text = player.Name
-	script.Parent.Parent.Tag.Text = "#"..tag
-	
+	if player.Name == "Avbrox" then
+		script.Parent.Parent.Tag.Text = "Owner"
+		script.Parent.Parent.Tag.TextColor3 = Color3.new(0.2, 0, 1)
+	elseif player.Name == "SamDerRobloxBro" then
+		script.Parent.Parent.Tag.Text = "Premium"
+		script.Parent.Parent.Tag.TextColor3 = Color3.new(0.498039, 0.505882, 0)
+	elseif player.Name == "Alifawwaz3" then
+		script.Parent.Parent.Tag.Text = "Premium"
+		script.Parent.Parent.Tag.TextColor3 = Color3.new(0.498039, 0.505882, 0)
+	elseif player.Name == "Magic_Eagel12" then
+		script.Parent.Parent.Tag.Text = "Premium"
+		script.Parent.Parent.Tag.TextColor3 = Color3.new(0.498039, 0.505882, 0)
+	else
+		script.Parent.Parent.Tag.Text = "User"
+	end
 end
-coroutine.wrap(RQATDBB_fake_script)()
-local function KVHSHM_fake_script() -- Settings.LocalScript 
+coroutine.wrap(FQCGPE_fake_script)()
+local function GFTW_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -577,8 +589,8 @@ local function KVHSHM_fake_script() -- Settings.LocalScript
 		
 	end)
 end
-coroutine.wrap(KVHSHM_fake_script)()
-local function JENKWL_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(GFTW_fake_script)()
+local function VKIGB_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -591,8 +603,8 @@ local function JENKWL_fake_script() -- ImageButton.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(JENKWL_fake_script)()
-local function URMEY_fake_script() -- ImageButton_2.LocalScript 
+coroutine.wrap(VKIGB_fake_script)()
+local function EFSVTFT_fake_script() -- ImageButton_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -605,8 +617,8 @@ local function URMEY_fake_script() -- ImageButton_2.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(URMEY_fake_script)()
-local function RPOHI_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(EFSVTFT_fake_script)()
+local function AMII_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -618,8 +630,8 @@ local function RPOHI_fake_script() -- TextButton_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RPOHI_fake_script)()
-local function SZLHCEV_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(AMII_fake_script)()
+local function YCTUM_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -632,8 +644,8 @@ local function SZLHCEV_fake_script() -- TextButton_7.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(SZLHCEV_fake_script)()
-local function WNMZZU_fake_script() -- ImageButton_3.LocalScript 
+coroutine.wrap(YCTUM_fake_script)()
+local function BFLZ_fake_script() -- ImageButton_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -642,8 +654,8 @@ local function WNMZZU_fake_script() -- ImageButton_3.LocalScript
 		script.Parent.Parent.FH.Visible = true
 	end)
 end
-coroutine.wrap(WNMZZU_fake_script)()
-local function NQLP_fake_script() -- Holer.LocalScript 
+coroutine.wrap(BFLZ_fake_script)()
+local function OJVAVK_fake_script() -- Holer.LocalScript 
 	local script = Instance.new('LocalScript', Holer)
 
 	script.Parent.MouseButton1Click:Connect(function()	
@@ -651,8 +663,8 @@ local function NQLP_fake_script() -- Holer.LocalScript
 		script.Parent.Visible = false
 	end)
 end
-coroutine.wrap(NQLP_fake_script)()
-local function NQZJKK_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(OJVAVK_fake_script)()
+local function DYQD_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	frame = script.Parent.Frame
@@ -660,4 +672,4 @@ local function NQZJKK_fake_script() -- ScreenGui.LocalScript
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(NQZJKK_fake_script)()
+coroutine.wrap(DYQD_fake_script)()
